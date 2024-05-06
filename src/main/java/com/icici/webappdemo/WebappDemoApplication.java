@@ -14,7 +14,7 @@ public class WebappDemoApplication {
 		SpringApplication.run(WebappDemoApplication.class, args);
 	}
 
-	@GetMapping("/")//from dev2
+	@GetMapping("/")//from dev2 + //from x1 branch
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
       return String.format("Hello %s!", name);
     }
